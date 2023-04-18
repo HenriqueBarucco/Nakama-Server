@@ -1,8 +1,5 @@
 FROM docker:latest
 
-COPY boot.sh /app/boot.sh
-
-
 WORKDIR /app
 COPY . .
 
