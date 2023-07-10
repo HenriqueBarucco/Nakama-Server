@@ -1,6 +1,5 @@
-FROM docker:latest
+FROM heroiclabs/nakama:3.4.0
 
-WORKDIR /app
-COPY . .
+EXPOSE 7349 7350 7351
 
-CMD "docker-compose up"
+CMD ["nakama", "--config", "/nakama/data/nakama.yaml"]
